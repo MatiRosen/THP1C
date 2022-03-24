@@ -17,8 +17,13 @@ public class Ej8 {
         System.out.println("Ingrese otro numero natural");
         double num2 = Double.parseDouble(teclado.nextLine());
 
-        System.out.println("Suma: " + (num1 + num2) + "\nResta: " + (num1 - num2) + "\nMultiplicación: "
-                + (num1 * num2) + "\nDivisión: " + (num1 / num2));
+        double suma = num1 + num2;
+        double resta = num1 - num2;
+        double multiplicacion = num1 * num2;
+        double division = num1 / num2;
+
+        System.out.println("Suma: " + suma + "\nResta: " + resta + "\nMultiplicación: " + multiplicacion
+                + "\nDivisión: " + division);
 
         teclado.close();
     }

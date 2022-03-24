@@ -43,7 +43,6 @@ public class Ej20 {
                 System.out.println("error");
                 break;
         }
-
         teclado.close();
     }
 }
