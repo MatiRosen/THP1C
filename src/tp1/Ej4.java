@@ -14,10 +14,10 @@ public class Ej4 {
          */
 
         System.out.println("Ingrese el valor monetario de una hora de trabajo");
-        double salarioPorHora = Integer.parseInt(teclado.nextLine());
+        double salarioPorHora = Double.parseDouble(teclado.nextLine());
 
         System.out.println("Ingrese las horas trabajadas por día");
-        double horasDiarias = Integer.parseInt(teclado.nextLine());;
+        double horasDiarias = Double.parseDouble(teclado.nextLine());;
 
         int diasHabiles = 5;
         double horasSabado = horasDiarias / 2;

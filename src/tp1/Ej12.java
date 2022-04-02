@@ -16,6 +16,9 @@ public class Ej12 {
         System.out.println("Ingrese otro numero entero");
         int num2 = Integer.parseInt(teclado.nextLine());
 
+
+
+
         if (num1 > num2){
             System.out.println("El numero mayor es " + num1);
         } else{

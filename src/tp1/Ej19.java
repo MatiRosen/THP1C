@@ -26,15 +26,17 @@ public class Ej19 {
         boolean estaEnAmbos = esDeUnSoloDigito && esImpar;
         boolean noEstaEnNinguno = !(esDeUnSoloDigito || esImpar);
 
-        if (esDeUnSoloDigito){
-            System.out.println("El numero es de un solo digito.");
-        }
-        if (esImpar){
-            System.out.println("El numero es impar");
-        }
         if (estaEnAmbos){
             System.out.println("El numero está en ambos");
+        } else{
+            if (esDeUnSoloDigito){
+                System.out.println("El numero es de un solo digito.");
+            }
+            if (esImpar){
+                System.out.println("El numero es impar");
+            }
         }
+
         if (noEstaEnNinguno){
             System.out.println("El numero no está en ninguno.");
         }

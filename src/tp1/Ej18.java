@@ -15,10 +15,21 @@ public class Ej18 {
         System.out.println("Ingrese otro numero entero.");
         int num2 = Integer.parseInt(teclado.nextLine());
 
-        if ((num1 % num2) == 0){
-            System.out.println("El mayor es divisible por el menor.");
+        int num3;
+        if (num2 > num1){
+            num3 = num1;
+            num1 = num2;
+            num2 = num3;
+        }
+
+        if (num2 != 0){
+            if ((num1 % num2) == 0){
+                System.out.println("El mayor es divisible por el menor.");
+            } else{
+                System.out.println("El mayor no es divisible por el menor");
+            }
         } else{
-            System.out.println("El mayor no es divisible por el menor");
+            System.out.println("El segundo numero debe ser distinto a 0");
         }
 
         teclado.close();

@@ -13,8 +13,12 @@ public class Ej3 {
               */
 
         System.out.println("Ingrese un numero");
-        double num = Double.parseDouble(teclado.nextLine());
-        System.out.println(num + " multiplicado por 5 es: " + num * 5 + ". " + num + " dividido por 2 es: " + num / 2);
+        int num = Integer.parseInt(teclado.nextLine());
+
+        int multplicacion = num*5;
+        double division = num/2d;
+
+        System.out.println(num + " multiplicado por 5 es: " + multplicacion + ".\n" + num + " dividido por 2 es: " + division);
 
         teclado.close();
     }

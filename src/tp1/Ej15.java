@@ -16,15 +16,18 @@ public class Ej15 {
         String nombre = teclado.nextLine();
         System.out.println("Ingrese la edad.");
         int edad = Integer.parseInt(teclado.nextLine());
-        System.out.println("Ingrese la altura en centimetros");
-        int altura = Integer.parseInt(teclado.nextLine());
+        System.out.println("Ingrese la altura en metros");
+        double altura = Double.parseDouble(teclado.nextLine());
 
-        if (edad >= 7 || altura >= 150){
+        boolean tieneEdad = edad >= 7;
+        boolean tieneAltura = altura >= 1.50;
+        boolean puedeEntrar = tieneAltura || tieneEdad;
+
+        if (puedeEntrar){
             System.out.println(nombre + " puede ingresar.");
         } else {
             System.out.println(nombre + " no llega a la edad ni la altura necesaria.");
         }
-
         teclado.close();
     }
 }

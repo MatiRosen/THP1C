@@ -11,7 +11,7 @@ public class Ej20 {
         int num1 = Integer.parseInt(teclado.nextLine());
 
         System.out.println("Ingrese la operación (+ ; - ; * ; /)");
-        String operacion = teclado.nextLine();
+        char operacion = teclado.nextLine().charAt(0);
 
         System.out.println("Ingrese otro numero entero");
         int num2 = Integer.parseInt(teclado.nextLine());
@@ -19,28 +19,28 @@ public class Ej20 {
         double resultado;
 
         switch (operacion){
-            case "+":
+            case '+':
                 resultado = num1 + num2;
                 System.out.println("El resultado es " + resultado);
                 break;
-            case "-":
+            case '-':
                 resultado = num1 - num2;
                 System.out.println("El resultado es " + resultado);
                 break;
-            case "*":
+            case '*':
                 resultado = num1 * num2;
                 System.out.println("El resultado es " + resultado);
                 break;
-            case "/":
+            case '/':
                 if (num2 == 0){
                     System.out.println("El numero 2 no debe ser igual a 0");
                 } else{
-                    resultado = num1 / num2;
+                    resultado = (double) num1 / num2;
                     System.out.println("El resultado es " + resultado);
                 }
                 break;
             default:
-                System.out.println("error");
+                System.out.println("Error");
                 break;
         }
         teclado.close();

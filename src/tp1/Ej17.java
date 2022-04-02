@@ -15,6 +15,7 @@ public class Ej17 {
 
         System.out.println("Ingresar edad (de 1 a 120 años)");
         int edad = Integer.parseInt(teclado.nextLine());
+
         if (edad < 1 || edad > 120){
             System.out.println("La edad está fuera de rango. Debe estar entre 1 y 120.");
         } else{
