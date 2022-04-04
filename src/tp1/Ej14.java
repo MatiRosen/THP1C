@@ -7,10 +7,10 @@ public class Ej14 {
     static Scanner teclado = new Scanner(System.in);
 
     public static void main(String[] args){
-        /*  Para entrar a la montaña rusa Infierno en las alturas se requiere tener al menos 7 años y medir
-            más de 1,50 metros. Completá el siguiente cuadro a mano según los requisitos y luego haz el
-            programa que permita, según las edades y estaturas ingresadas por el usuario, obtener los
-            mismos resultados según los siguientes datos: [EC]
+        /*  Para entrar a la monta�a rusa Infierno en las alturas se requiere tener al menos 7 a�os y medir
+            mas de 1,50 metros. Completa el siguiente cuadro a mano segun los requisitos y luego haz el
+            programa que permita, segun las edades y estaturas ingresadas por el usuario, obtener los
+            mismos resultados segun los siguientes datos: [EC]
         */
         System.out.println("Ingrese el nombre.");
         String nombre = teclado.nextLine();
@@ -20,7 +20,7 @@ public class Ej14 {
         double altura = Double.parseDouble(teclado.nextLine());
 
         boolean tieneEdad = edad >= 7;
-        boolean tieneAltura = altura >= 1.50;
+        boolean tieneAltura = altura > 1.50;
         boolean puedeEntrar = tieneAltura && tieneEdad;
 
         if (puedeEntrar){

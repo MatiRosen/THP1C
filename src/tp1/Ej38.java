@@ -15,16 +15,26 @@ public class Ej38 {
             siguientes mensajes según sea el caso: "Acceso concedido" o "Se ha bloqueado la cuenta"
          */
         final String nombre = "admin";
-        final int contra = 123456;
+        final String contra = "123456";
 
         String nombreIntento;
-        int contraIntento;
+        String contraIntento;
 
         int intentos = 1;
-
         do {
+            System.out.println("Escriba el nombre de usuario");
+            nombreIntento = teclado.nextLine();
 
-        } while (intentos < 3 && contra != contra )
+            System.out.println("Ingrese la contraseña");
+            contraIntento = teclado.nextLine();
+            intentos++;
+        } while (intentos <= 3 && (!nombreIntento.equals(nombre) || !contraIntento.equals(contra)));
+
+        if (intentos <= 3){
+            System.out.println("Acceso concedido!");
+        } else{
+            System.out.println("Se ha bloqueado la cuenta");
+        }
 
         teclado.close();
     }

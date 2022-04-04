@@ -8,7 +8,7 @@ public class Ej25 {
 
     public static void main(String[] args){
         /*
-            Realizá un programa que permita ingresar dos números enteros que representen el ancho y el
+            Realiza un programa que permita ingresar dos numeros enteros que representen el ancho y el
             alto de una matriz de cruces. El programa debe dibujar dicha matriz.
          */
 

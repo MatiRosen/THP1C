@@ -8,13 +8,13 @@ public class Ej19 {
 
     public static void main(String[] args){
         /*19.   Existen dos reglas que identifican dos conjuntos de valores:
-                    a. El número es de un solo dígito.
-                    b. El número es impar.
-                A partir de estas reglas, realizá un programa que permita ingresar un número entero. Debe
+                    a. El numero es de un solo digito.
+                    b. El numero es impar.
+                A partir de estas reglas, realiza un programa que permita ingresar un numero entero. Debe
                 asignar el valor que corresponda a las variables booleanas esDeUnSoloDigito, esImpar,
-                estaEnAmbos y noEstaEnNinguno el valor Verdadero o Falso, según corresponda, para indicar si
-                el valor número ingresado pertenece o no a cada conjunto. Definí un lote de prueba de varios
-                números y probá el algoritmo, escribiendo los resultados tal como se hizo en los ejercicios
+                estaEnAmbos y noEstaEnNinguno el valor Verdadero o Falso, segun corresponda, para indicar si
+                el valor numero ingresado pertenece o no a cada conjunto. Defini un lote de prueba de varios
+                numeros y proba el algoritmo, escribiendo los resultados tal como se hizo en los ejercicios
                 anteriores.
                 */
 
@@ -27,7 +27,7 @@ public class Ej19 {
         boolean noEstaEnNinguno = !(esDeUnSoloDigito || esImpar);
 
         if (estaEnAmbos){
-            System.out.println("El numero está en ambos");
+            System.out.println("El numero es impar y de un solo digito");
         } else{
             if (esDeUnSoloDigito){
                 System.out.println("El numero es de un solo digito.");
@@ -38,7 +38,9 @@ public class Ej19 {
         }
 
         if (noEstaEnNinguno){
-            System.out.println("El numero no está en ninguno.");
+            System.out.println("El numero no es impar y no es de un solo digito.");
         }
+        
+        teclado.close();
     }
 }

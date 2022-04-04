@@ -8,11 +8,11 @@ public class Ej24 {
 
     public static void main(String[] args){
         /*
-            Realizá un programa que permita al usuario ingresar dos números enteros num1 y num2,
-            donde el primero siempre deberá ser menor o igual al segundo. La computadora debe
-            mostrar la secuencia de números existentes entre ambos:
-                a. Incluyéndolos;
-                b. Excluyéndolos
+            Realiza un programa que permita al usuario ingresar dos numeros enteros num1 y num2,
+            donde el primero siempre debera ser menor o igual al segundo. La computadora debe
+            mostrar la secuencia de numeros existentes entre ambos:
+                a. Incluyendolos;
+                b. Excluyendolos
          */
 
         System.out.println("Ingrese un numero entero");

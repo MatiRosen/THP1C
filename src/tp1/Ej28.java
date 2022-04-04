@@ -8,9 +8,9 @@ public class Ej28 {
 
     public static void main(String[] args){
         /*
-            Realizá un programa que a partir de un número entero cant ingresado por el usuario permita
-            cargar por teclado cant números enteros. La computadora debe mostrar cuál fue el mayor
-            número y en qué posición apareció.
+            Realiza un programa que a partir de un numero entero cant ingresado por el usuario permita
+            cargar por teclado cant numeros enteros. La computadora debe mostrar cual fue el mayor
+            numero y en que posicion aparecio.
          */
         int cant;
         do {

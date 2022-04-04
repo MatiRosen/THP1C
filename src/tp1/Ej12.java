@@ -7,7 +7,7 @@ public class Ej12 {
     static Scanner teclado = new Scanner(System.in);
 
     public static void main(String[] args){
-        /*  Realizá un programa que permita ingresar dos números enteros e indique cuál de ellos es el
+        /*  Realiza un programa que permita ingresar dos numeros enteros e indique cual de ellos es el
             mayor. [EC]
         */
 
@@ -15,8 +15,6 @@ public class Ej12 {
         int num1 = Integer.parseInt(teclado.nextLine());
         System.out.println("Ingrese otro numero entero");
         int num2 = Integer.parseInt(teclado.nextLine());
-
-
 
 
         if (num1 > num2){

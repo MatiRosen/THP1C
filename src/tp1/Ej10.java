@@ -8,9 +8,9 @@ public class Ej10 {
 
 
     public static void main(String[] args){
-        /*10.   Realizá un programa que permita resolver el siguiente problema: Tres personas aportan
-                diferente capital a una sociedad y desean saber el valor total aportado y qué porcentaje
-                aportó cada una (indicando nombre y porcentaje). Solicitar la carga por teclado del nombre
+        /*10.   Realiza un programa que permita resolver el siguiente problema: Tres personas aportan
+                diferente capital a una sociedad y desean saber el valor total aportado y que porcentaje
+                aporto cada una (indicando nombre y porcentaje). Solicitar la carga por teclado del nombre
                 de cada socio, su capital aportado y a partir de esto calcular e informar lo requerido
                 previamente.*/
 
@@ -33,8 +33,8 @@ public class Ej10 {
         double porcentaje2 = aporte2 * 100 / total;
         double porcentaje3 = aporte3 * 100 / total;
 
-        System.out.println("El total aportado es de $" + total + ". " + nombre1 + " aportó " + porcentaje1 + "%. "
-                + nombre2 + " aportó " + porcentaje2 + "%. " + nombre3 + " aportó " + porcentaje3 + "%.");
+        System.out.println("El total aportado es de $" + total + ". " + nombre1 + " aporto " + porcentaje1 + "%. "
+                + nombre2 + " aporto " + porcentaje2 + "%. " + nombre3 + " aporto " + porcentaje3 + "%.");
 
         teclado.close();
     }

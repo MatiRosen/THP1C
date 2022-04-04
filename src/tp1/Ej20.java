@@ -10,7 +10,7 @@ public class Ej20 {
         System.out.println("Ingrese un numero entero");
         int num1 = Integer.parseInt(teclado.nextLine());
 
-        System.out.println("Ingrese la operación (+ ; - ; * ; /)");
+        System.out.println("Ingrese la operacion (+ ; - ; * ; /)");
         char operacion = teclado.nextLine().charAt(0);
 
         System.out.println("Ingrese otro numero entero");
@@ -33,7 +33,7 @@ public class Ej20 {
                 break;
             case '/':
                 if (num2 == 0){
-                    System.out.println("El numero 2 no debe ser igual a 0");
+                    System.out.println("ERROR. El numero 2 no debe ser igual a 0");
                 } else{
                     resultado = (double) num1 / num2;
                     System.out.println("El resultado es " + resultado);

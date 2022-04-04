@@ -7,8 +7,8 @@ public class Ej23 {
     static Scanner teclado = new Scanner(System.in);
 
     public static void main(String[] args){
-        /*  Realizá un programa que permita ingresar un número entero n. Debe mostrar los primeros
-            10 múltiplos de n (desde 1 x n).
+        /*  Realiza un programa que permita ingresar un numero entero n. Debe mostrar los primeros
+            10 multiplos de n (desde 1 x n).
          */
         System.out.println("Ingrese un numero entero");
         int n = Integer.parseInt(teclado.nextLine());

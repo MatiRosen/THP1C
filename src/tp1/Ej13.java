@@ -7,7 +7,7 @@ public class Ej13 {
     static Scanner teclado = new Scanner(System.in);
 
     public static void main(String[] args){
-        /*  Realizá un programa para ingresar tres números enteros e indique cuál de ellos es el mayor y
+        /*  Realiza un programa para ingresar tres numeros enteros e indique cual de ellos es el mayor y
             su valor. [EC]
          */
 
@@ -25,7 +25,7 @@ public class Ej13 {
             if (num2 > num3){
                 System.out.println("El numero mayor es el segundo: " + num2);
             } else {
-                System.out.println("El numero mayor es el tercero: " + num3);
+            	System.out.println("El numero mayor es el tercero: " + num3);            
             }
         }
     }
