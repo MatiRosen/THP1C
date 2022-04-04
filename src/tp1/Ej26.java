@@ -16,13 +16,29 @@ public class Ej26 {
         do {
             System.out.println("Ingrese un numero natural");
             n = Integer.parseInt(teclado.nextLine());
-        } while (n < 0);
+        } while (n < 1);
 
-        for (int i = 1; i <= n; i++){
+        /*for (int i = 1; i <= n; i++){
             if (i % 5 != 0){
                 System.out.println("Multiplicar " + 3 + " por " + i + " es igual a = " + 3 * i);
             } else{
                 n++;
+            }
+        }*/
+
+        /*  Otra manera de hacerlo sin modificar la n dentro del for... (En este caso funciona, pero es mala practica modificar
+            el valor de la variable con la que se compara la i dentro del for.
+         */
+
+        for (int i = n; i >= 0; i--){
+            if (i % 5 == 0){
+                n++;
+            }
+        }
+
+        for (int i = 1; i <= n; i++){
+            if (i % 5 != 0){
+                System.out.println("Multiplicar " + 3 + " por " + i + " es igual a = " + 3 * i);
             }
         }
 

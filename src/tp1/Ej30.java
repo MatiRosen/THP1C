@@ -14,7 +14,7 @@ public class Ej30 {
             ingresada. Considerar que no se puede dividir por cero. Cuando la operación ingresada sea
             ‘F’ nos indicará que no se desean calcular más operaciones. [EC]
          */
-        int operacion;
+        char operacion;
 
         do {
             System.out.println("Ingrese la operación a realizar (‘+’, ‘-’, ‘*’, ‘/’, ‘F’ (para terminar))");
@@ -28,12 +28,6 @@ public class Ej30 {
             System.out.println("Ingrese el segundo numero");
             int num2 = Integer.parseInt(teclado.nextLine());
 
-            if (operacion == '/'){
-                while (num2 == 0){
-                    System.out.println("Recuerde que para dividir, el segundo numero debe ser distinto a 0. Escriba otro numero");
-                    num2 = Integer.parseInt(teclado.nextLine());
-                }
-            }
             switch (operacion){
                 case '+':
                     System.out.println("El resultado de sumar " + num1 + " + " + num2 + " es: " + (num1+num2));
@@ -45,6 +39,10 @@ public class Ej30 {
                     System.out.println("El resultado de multiplicar " + num1 + " * " + num2 + " es: " + (num1*num2));
                     break;
                 case '/':
+                    while (num2 == 0){
+                        System.out.println("Recuerde que para dividir, el segundo numero debe ser distinto a 0. Escriba otro numero");
+                        num2 = Integer.parseInt(teclado.nextLine());
+                    }
                     System.out.println("El resultado de dividir " + num1 + " / " + num2 + " es: " + ((double) num1/num2));
                     break;
             }

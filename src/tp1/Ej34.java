@@ -22,8 +22,11 @@ public class Ej34 {
                 estatura = Double.parseDouble(teclado.nextLine());
             } while (estatura < 0);
             metrosTotal = metrosTotal + estatura;
-            cant++;
-        } while (estatura != 0);
 
+            if (estatura != 0){
+                cant++;
+            }
+        } while (estatura != 0);
+        System.out.println("El promedio de altura es de " + metrosTotal / cant);
     }
 }
